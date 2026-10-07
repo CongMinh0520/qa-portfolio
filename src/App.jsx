@@ -4,7 +4,7 @@ import { missions as missionData, tools } from './data.js'
 import Scene3D from './Scene3D.jsx'
 import { profile as seedProfile } from './data.js'
 
-const missions = missionData.map(item => [item.id, item.type, item.title, item.name, item.metric])
+const missions = (() => { try { return (JSON.parse(localStorage.getItem('qa-portfolio-content'))?.missions || missionData).map(item => [item.id, item.type, item.title, item.name, item.metric]) } catch { return missionData.map(item => [item.id, item.type, item.title, item.name, item.metric]) } })()
 const profile = (() => { try { return JSON.parse(localStorage.getItem('qa-portfolio-content'))?.profile || seedProfile } catch { return seedProfile } })()
 
 export default function App(){
