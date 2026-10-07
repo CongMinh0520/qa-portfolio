@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { ArrowLeft, Check, Plus, Save, Trash2 } from 'lucide-react'
 import { missions as seedMissions, profile as seedProfile, tools as seedTools } from './data.js'
 
-const KEY='qa-portfolio-content'
+const KEY='qa-portfolio-content-v2'
 const getContent=()=>{try{return JSON.parse(localStorage.getItem(KEY))||{profile:seedProfile,missions:seedMissions,tools:seedTools}}catch{return {profile:seedProfile,missions:seedMissions,tools:seedTools}}}
 
 export default function Admin(){const [content,setContent]=useState(getContent);const [saved,setSaved]=useState(false)

@@ -2,7 +2,7 @@ export const profile = {
   name: 'Minh Nguyen',
   role: 'QA Engineer',
   email: 'hello@minhnguyen.dev',
-  intro: 'QA Engineer chuyên kiểm thử phần mềm, tự động hóa quy trình và biến những edge case thành trải nghiệm đáng tin cậy.'
+  intro: 'QA Engineer đi tìm những điều dễ bị bỏ sót — biến từng bug, từng edge case thành những trải nghiệm mượt mà, đáng tin cậy và sẵn sàng để tỏa sáng.'
 }
 
 export const missions = [
